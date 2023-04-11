@@ -8,4 +8,8 @@ let catalog = [
     {id: 3, title: "Eat That Frog", author: "Brian Tracy", published: new Date(), quuantity: 10, price: 1300}
 ]
 
-rough
+booksRoute.get('/', (req, res) => {
+    res.status(200).json(catalog)
+})
+
+module.exports = booksRoute;
